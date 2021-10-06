@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">RecipeApp</string>
+
+    <!--This String for onboarding1,onboarding2, and login page-->
+    <string name="big_title_onboard1">BECOME A\nHOME CHEF</string>
+    <string name="tiny_title_onboard1">With this app you can cook a food easily</string>
+    <string name="big_title_onboard2">SEARCH YOUR\nRECIPE</string>
+
+    <string name="big_title_loginpage">SIGN IN TO GOOD FOOD NOW</string>
+    <string name="search_your_recipe">SEARCH YOUR RECIPE</string>
+    <string name="tiny_title_onboard2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+    <string name="usernam">Username</string>
+    <string name="password">Password</string>
+    <string name="pref_file_key">pref_file_key</string>
+    <string name="pref_is_user_login">isuserLogin</string>
+    <string name="pref_name_of_user">nameofuser</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>
