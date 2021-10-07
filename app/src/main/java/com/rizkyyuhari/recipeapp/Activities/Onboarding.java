@@ -16,7 +16,7 @@ import com.rizkyyuhari.recipeapp.Util.SessionManager;
 public class Onboarding extends AppCompatActivity {
 
     private ViewPager viewpager;
-
+    SessionManager sessionManager;
 
     SliderAdapter sliderAdapter;
     private Button btnGetStarted;
@@ -30,8 +30,12 @@ public class Onboarding extends AppCompatActivity {
         initView();
 
 
-
-
+        sessionManager = new SessionManager(this);
+        if (sessionManager.isUserLogin()) {
+            String name = sessionManager.getNamaofUser();
+            startActivity(new Intent(Onboarding.this, MainActivity.class).putExtra("uname", name));
+            finish();
+        }
 
 
         sliderAdapter = new SliderAdapter(this);

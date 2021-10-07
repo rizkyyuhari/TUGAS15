@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity {
         String uname = getIntent().getStringExtra("uname");
         initView();
 
-        openSnackbar(viewpagerhome, uname);
 
         //tablayout
         tablayout.setupWithViewPager(viewpagerhome);
@@ -70,18 +69,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
-
         btnLogout = (Button) findViewById(R.id.btn_logout);
 
         tablayout = (TabLayout) findViewById(R.id.tablayout);
         viewpagerhome = (ViewPager) findViewById(R.id.viewpagerhome);
-    }
-
-
-    public void openSnackbar(View view, String name) {
-        Snackbar snackbar = Snackbar.make(view, "Welcome Back, "+name, Snackbar.LENGTH_LONG);
-        snackbar.getView().setBackgroundColor(ContextCompat.getColor(getApplicationContext(), R.color.black));
-        snackbar.show();
-    }
-
+    }//initview
 }

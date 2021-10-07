@@ -33,4 +33,10 @@ public class SessionManager {
     public String getNamaofUser(){
         return sharedPreferences.getString(context.getString(R.string.pref_name_of_user),"Unknown");
     }
+
+    public String isOpenedOnce(){
+        return "";
+    }
+
+
 }
